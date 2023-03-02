@@ -1,0 +1,231 @@
+body{
+  background: white;  
+  overflow-x: hidden;
+  /* background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  
+  background: linear-gradient(to right, #3c1053, #ad5389);  */
+}
+
+#intro{
+    text-align: center;
+    color: #1c2930;
+    margin: 2% 0 2% 0;
+    font-family: Dosis;
+    letter-spacing: 1px;
+}
+
+.allCont{
+    background-color: #fff;
+    border:1px solid lightgray;
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+
+input{
+    background-color: none !important;
+    border-color: 080c44 !important; 
+    border-radius: 8px !important;
+    color: 080c44 !important;
+    transition: all 0.5s ease-in;
+    font-family: Dosis;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+
+input::placeholder {
+    font-style: italic;
+    color: 080c44 !important;
+}
+
+
+input:focus, input:link, input:active{
+  box-shadow: none !important;
+  border-color: #878787 !important; 
+  transition: all 0.5s;
+}
+
+
+select{
+  background-color: none !important;
+  border-color: #1c2930 !important; 
+  border-radius: 8px !important;
+  color: #1c2930 !important;
+  transition: all 0.5s ease-in;
+  
+}
+
+select::placeholder {
+  font-style: italic;
+  color: #878787 !important;
+}
+
+#divid {
+  border-top: 1px double #04ba8c;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+label{
+    margin-bottom: 5px !important;
+    font-family: Dosis;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#infoPi, #infoEd, #infoJob, #infoSkills{
+  text-align: center;
+  background-color:#1c2930;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+  
+
+
+
+.btn {
+  background: #fff;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #1c2930;
+  font-size: 20px;
+  padding: 4px 13px 4px 13px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1c2930;
+  border-radius: 50%;
+  margin-top: 4%;
+
+}
+
+.btn:hover{
+  color: white;
+  background-color: #1c2930;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+#jobSection{
+  display: none;
+}
+
+#styleSection{
+  display: none;
+}
+
+#evSection{
+  display: none;
+}
+
+
+#removeJob, #remove1{
+  display: none;
+}
+
+#removeStyle, #remove2{
+  display: none;
+}
+
+#removeEv, #remove3{
+  display: none;
+}
+
+#workcClonediv, #workcClonedivTwo, #workcClonedivThree, #workcClonedivFour{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: none;
+}
+ 
+#remove, #removeWork{
+  display: none;
+}
+
+/* .removeEd {
+    background-color:transparent;
+    -moz-border-radius:42px;
+    -webkit-border-radius:42px;
+    border-radius:42px;
+    border:1px solid #ad5389;
+    cursor:pointer;
+    color: #ad5389;
+    font-family:Arial;
+    font-size:22px;
+    padding:2px 8px;
+    text-decoration:none;
+}
+.removeEd:hover{
+    background-color:transparent;
+    cursor: pointer;
+} */
+  
+#submitButton{
+  background-color: #fff;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 8px;
+  color: #1c2930;
+  font-family: Dosis;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1c2930 2px;
+  margin-bottom: 15%;
+}
+
+#submitButton:hover, #submitButton:active, #submitButton:visited, #submitButton:focus{
+  color: white;
+  background-color: #1c2930;
+  transform: scale(1.1);
+  transform: 0.5s;
+  cursor: pointer;
+  outline: none;
+}
+
+.valid-error{
+  border-color: red!important;
+}
+
+
+input[type="radio"]{
+  margin: 0 8px;
+}
+
+
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  visibility: hidden;
+  z-index: 100000;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 10rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
