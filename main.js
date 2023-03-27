@@ -40,10 +40,11 @@ $(function () {
     var restaurant = $("#restaurant").val();
     console.log(restaurant)
 
-   
+    var things = $("#things").val();
+    console.log(things)
 
     prompt = `
-    Give me a ${days} day ${destination} itinerary in detail for a budget of ${budget} a day and include ${restaurant}. Also include cost incured for every event.
+    Give me a ${days} day ${destination} itinerary in detail for a budget of ${budget} a day and include ${restaurant}. I will do these things ${things} during the trip. Also include cost incured for every event.
     `
 
     var inputsForValidate = $('.valid');
